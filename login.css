@@ -1,0 +1,37 @@
+#logForm{
+    display:flex;
+    flex-direction:column}
+.consent{ display:flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;}
+
+.title{ font-family: "Pixelify Sans", sans-serif;}
+.Login-Details form{gap: 10px;}
+.Login-Details form input{
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+.Login-Details label{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;}
+main{display: flex;
+    margin: 100px;
+    justify-content: center;
+    }
+:root{background-image: url(Photos/login.jpg);
+    background-size: cover;
+    background-position: center;}
+.login-box{
+    position:relative;
+    width: 500px;
+    height: 500px;
+    padding:20px;
+    background-color:rgba(123, 123, 123, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius:0.7cap;
+    justify-self: center; 
+}

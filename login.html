@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=directions_bus" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="menustyle.css">
+    <link rel="stylesheet" href="herostyle.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Log In</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="header-container">
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="showcase.html">Our Cars</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="Login.html">Log In</a></li>
+                    <!-- <li><a href="locations.html">Locations</a></li> -->
+                    <!-- <li><a href="contact">Contact Us</a></li> -->
+                </ul>
+            </div>
+                <nav>
+                    <div class="ham-menu"> <!--This will make the menu icon-->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="login"><a href="Login.html"><svg class="Loginbutton" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg></a></div>
+                </nav>
+            </div>
+        </div>
+        <script src="menulogic.js"></script>
+    </header>
+    <main >
+        <div class="login-box">
+            <div class="title"><h2>Sign In / Sign Up</h2></div>
+            <div class="Login-Details"><form id="logForm" action="" >
+                <label for="Username">Username</label>
+                <input id="Username" type="text" required>
+                <label for="Password">Password</label>
+                <input id="Password" type="password" required>
+                <div class="consent"><input type="checkbox" name="User" id="User" required><p style="color: aliceblue;">I certify that I hold a valid driver's license and am over 18 years old.</p></div>
+                <a href="index.html"><input type="submit" class="Submit"></a>
+            </form></div>
+    </div>
+    <script src="login.js"></script>
+    </main>
+    <footer>
+	<div class="footer-container">
+	<div class="Licenses">Lumina Motors is a licensed vehicle rental operator under the Motor Vehicles Act (License No. LM-8829-X). All vehicles are fully insured under the Premium Commercial Fleet Policy (#PC-9921-Z) compliant with national transport regulations.</div>
+	<div class="Information">
+		<h3>Contact Us & Office Timing</h3>
+		<table>
+			<tr><th>Coencrige & Support:</th><td>24/7</td></tr>
+			<tr><th>Visiting Time:</th><td>Mon - Sun: 09:00AM - 09:00PM</td></tr>
+			<tr><th>Airport Drop-off:</th><td>24 Hours (Pre-booking Required)</td></tr>
+
+		</table></div>
+	<div class="social-media">
+                <h4>Follow Us</h4>
+                <a href="https://x.com/IsaacpaulShane" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                                <a href="https://www.instagram.com/shane.intentionboi/" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" style="top:15px" class="social-link" target="_blank">
+                                <img src="Photos/rickroll.svg" alt="Good-Old Rickroll">
+                </a>
+                                <a href="https://www.linkedin.com/in/isaac-paul-668088369/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                                <a href="https://www.youtube.com/@isaacpaul7849" class="social-link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+	<div class="Copyrights"><p> © 2025 Lumina Motors Inc. All rights reserved.</p></div>
+	</div>
+	</footer>
+</body>
+</html>

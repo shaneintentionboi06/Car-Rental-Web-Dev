@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="menustyle.css" rel="stylesheet" >
+    <link href="herostyle.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=directions_bus" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Shop</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="header-container">
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="showcase.html">Our Cars</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="Login.html">Log In</a></li>
+                    <!-- <li><a href="locations.html">Locations</a></li> -->
+                    <!-- <li><a href="contact">Contact Us</a></li> -->
+                </ul>
+            </div>
+                <nav>
+                    <div class="ham-menu"> <!--This will make the menu icon-->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="login"><a href="Login.html"><svg class="Loginbutton" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg></a></div>
+                </nav>
+            </div>
+        </div>
+        <script src="menulogic.js"></script>
+    </header>
+    <main>
+        <div class="Introduceshowcase"><h1>Our Cars</h1></div>
+        <section class="Content-Section">
+            <div class="Toppicks">
+                <h2>Top Picks</h2>
+                <div class="Cards">
+                    <div class="Card" style="background-image:url(Photos/Ioniq.jpg); background-position: center -55px; background-size:800px;"><p id="CarName">IONIQ 5N</p><p id="Book">Book Now</p></div>
+                    <div class="Card" style="background-image:url(Photos/Reveulto.jpg); background-position:  center; background-size:450px;"><p id="CarName">Reveulto</p></div>
+                    <div class="Card" style="background-image:url(Photos/GT3RS.jpg); background-position:  center -190px; background-size:450px;"><p id="CarName">GT3 RS</p></div>
+                </div>
+            </div>
+            <div class="Road-Trip-Picks">
+                <h2>Road Trip Picks</h2>
+                <div class="Cards">
+                    <div class="Card" style="background-image:url(Photos/2026ElantraNLine.jpg); background-position: -100px bottom; background-size:600px;" ><p id="CarName">Elantra N-line 2026</p></div>
+                    <div class="Card" style="background-image:url(Photos/POLO.jpg); background-position: -108px ; background-size:750px;"><p id="CarName">Polo 2024</p></div>
+                    <div class="Card" style="background-image:url(Photos/YARIS.jpg); background-size:600px ;background-position: -120px -230px;"><p id="CarName">YARIS 2025</p></div>
+                </div>
+            </div>
+            <!-- <div class="Winter-Ready">
+                <h2>Winter Ready</h2>
+                <div class="Cards">
+                    <div class="Card" ></div>
+                    <div class="Card"></div>
+                    <div class="Card"></div>
+                </div>
+            </div> -->
+            
+        </section>
+        <section class="long-term Discounts">
+            <!-- THis one will have a table fixing it in a bit -->
+             <div class="tableandtitle">
+                <h1 id="tablehead">Long Term Rental Discounts</h1><span id="savings">More Days => More Savings</span>
+                <table>
+                    <tr><th>RENTAL PERIOD</th><th>ALL VEHICLES</th><th>HYUNDAI SUCCEED</th></tr>
+                    <tr><td>DAY 3 - 6</td><td>10% OFF</td><td>20% OFF</td></tr>
+                    <tr><td>DAY 7 - 12</td><td>15% OFF</td><td>25% OFF</td></tr>
+                    <tr><td>DAY 13 </td><td>20% OFF</td><td>30% OFF</td></tr>
+                    <tr><td>DAY 14 </td><td>21% OFF</td><td>31% OFF</td></tr>
+                    <tr><td>DAY 15 - 28</td><td>25% OFF</td><td>40% OFF</td></tr>
+                    <tr><td>DAY 29 - 30</td><td>Total Price same as Day 28</td><td>Total Price same as Day 28</td></tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+	<div class="footer-container">
+	<div class="Licenses">Lumina Motors is a licensed vehicle rental operator under the Motor Vehicles Act (License No. LM-8829-X). All vehicles are fully insured under the Premium Commercial Fleet Policy (#PC-9921-Z) compliant with national transport regulations.</div>
+	<div class="Information">
+		<h3>Contact Us & Office Timing</h3>
+		<table>
+			<tr><th>Coencrige & Support:</th><td>24/7</td></tr>
+			<tr><th>Visiting Time:</th><td>Mon - Sun: 09:00AM - 09:00PM</td></tr>
+			<tr><th>Airport Drop-off:</th><td>24 Hours (Pre-booking Required)</td></tr>
+
+		</table></div>
+	<div class="social-media">
+                <h4>Follow Us</h4>
+                <a href="https://x.com/IsaacpaulShane" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                                <a href="https://www.instagram.com/shane.intentionboi/" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" style="top:15px" class="social-link" target="_blank">
+                                <img src="Photos/rickroll.svg" alt="Good-Old Rickroll">
+                </a>
+                                <a href="https://www.linkedin.com/in/isaac-paul-668088369/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                                <a href="https://www.youtube.com/@isaacpaul7849" class="social-link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+	<div class="Copyrights"><p> © 2025 Lumina Motors Inc. All rights reserved.</p></div>
+	</div>
+	</footer>
+</body>
+</html>

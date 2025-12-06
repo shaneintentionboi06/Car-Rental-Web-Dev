@@ -1,0 +1,61 @@
+.footer-container{
+	display: flex;
+	color: white;
+	background-color: rgba(128, 128, 128,0.7);
+	flex-basis: 20vw;
+	width:100%;
+	justify-self: center;
+    justify-content: center;
+    align-items: center;
+	border-radius:5cap;
+	padding: 50px;
+	gap: 20px;
+	text-align: center;
+    border-top-left-radius: 1cap ;
+    border-top-right-radius: 1cap ;
+    padding: 80px;
+    margin-top: 20px;
+}
+
+.footer-container table{
+	column-width: 100px;
+}
+.footer-container .Licenses{
+	width: 400px;
+	Text-align: left;
+}
+
+.footer-container .Copyrights{
+	display: flex;
+	flex-direction: column;
+	Text-align:right;
+	justify-content: flex-end;
+}
+
+footer{
+	position: relative;
+	display: inline;
+	bottom:  -10px;
+}
+
+.social-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    background: rgb(108, 164, 250);
+    border: 2px solid rgb(212,175,55);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.social-link:hover{
+    color: #2c2c2c;
+    border-color: #d4af37;
+    transform: translateY(-3px);
+}

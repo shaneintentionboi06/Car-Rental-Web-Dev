@@ -1,0 +1,354 @@
+/* Hero Section Styling */
+
+
+
+
+.herovideo video{
+    position: absolute;
+    /* height: 100vh; */
+    width: 100%;
+    z-index: 0;
+    border-radius: 1cap;
+    
+}
+
+
+.Hero-Section{
+    /* background-color: aqua; */
+    position: relative;
+    height: 100vh;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 0.5cap;
+    box-shadow: inset 0 0 100px 50px #303030;
+    background: linear-gradient(bottom, transparent 65%, #303030);
+}
+h1{
+    position: relative;
+    font-family: "Science Gothic", sans-serif;
+    align-content: center;
+    font-size: 5rem;
+    text-align: center;
+    z-index: 10;
+    color: aliceblue;
+    /* color: aliceblue; */
+
+    
+}
+
+/* h2{font-family: "Playfair Display", serif;} */
+
+.mute-message{
+    font-family:"Pixelify Sans", sans-serif;
+    position: absolute;
+    /* display: none; */
+    opacity: 0;
+    animation: fadein2 2s ease; 
+    animation-delay: 1s;
+    font-size: 15px;
+    transition: fade 1s;
+    color: aliceblue;
+}
+
+@keyframes fadein2 {
+    0%,25%{ 
+        opacity: 0 ;
+        transformY: translateY(20px);
+        filter: blur(20px);
+    }
+    50%,80%{
+        opacity: 1; 
+        transform: translateY(0px);
+        filter: blur(0px);
+        /* display: block; */
+    }
+    100%{opacity: 0;}
+}
+
+.mute-toggle{
+    position: absolute;
+    /* overflow: hidden; */
+    width: 50px ;
+    height: 50px;
+    right:  30px;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    justify-content:center ; 
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    border-radius: 50%;
+    z-index: 20;
+    transition: 0.3s; 
+    animation: notify 4s ease ;
+}
+
+@keyframes notify{
+    25%{width: 50px; justify-content:end ;padding-left: 10px; }  
+    50%,75%{width: 200px; border-radius: 0.5cap; justify-content:end; padding-left: 0px;} 
+    95%{width: 50px; border-radius: 50%; justify-content:end; padding-left: 10px;}
+    100%{justify-content:center ;} 
+}
+ 
+.mute-toggle:hover{
+    background-color:rgb(159, 159, 159) ;
+}
+
+.off-icon{ display: none;}
+.on-icon{ display: block;}
+
+.mute-toggle.muted .off-icon{ display: block;}
+.mute-toggle.muted .on-icon{ display: none;}
+
+
+.hero-text{
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    min-width: 300px; 
+    background: linear-gradient(20deg, blueviolet, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: fadein 6s ease;
+    z-index: 100;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0 ;
+        transformY: translateY(20px);
+        filter: blur(20px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0px);
+        filter: blur(0px);
+    }
+    100%{
+        opacity: 0;
+        filter: blur(20px);
+    }
+}
+
+
+.Hero-Section .button{
+    position: absolute;
+    bottom: 20vh;
+    justify-self: center;
+
+}
+.Hero-Section #start{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    border-radius: 5cap;
+    padding: 10px;
+    background-color: rgba(75, 75, 75, 0.59);
+    transition: 0.3s;
+    color: aliceblue;
+}
+
+#start:hover{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 100px 10px white;;
+    color: black;
+    font-weight: bold;
+}
+
+h2{
+    align-content: center;
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.Cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin:  10px;
+}
+
+.Card{
+    position: relative;;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(255, 253, 253);
+    border-radius: 1cap;
+    z-index: 50;
+    transition: 0.5s ease;
+    box-shadow: px 12px 10px 70px cadetblue;
+}
+.Card p{
+    font-family: "Science Gothic", sans-serif;
+    font-size: 30px;
+    mix-blend-mode:hard-light;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+#Book{
+    position: absolute;
+    font-family: "Pixelify Sans", sans-serif;;
+    justify-self: center;
+    background-color: rgba(154, 154, 154,0.5);
+    backdrop-filter: blur(20px);
+    bottom: 10px;
+    cursor:pointer;
+    color: rgb(240, 248, 255,0.7);
+    padding: 7px;
+    border-radius: 0.5cap;
+    transition: 0.3s ease;
+}
+
+#Book:hover{
+    color: rgba(238, 219, 255);
+    box-shadow: 0 10px 10px white;
+}
+
+#CarName{
+    align-self: start;
+}
+
+.Card:hover{
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: 0px 12px 40px rgb(99, 237, 242);
+    width: 520px;
+    height: 400px;
+    z-index: 100;
+}
+
+:root{
+    /* animation: moveback 5s ease-in-out  infinite; */
+    background: #181818;
+    
+    background-size: cover;
+    /* background-image: url(Photos/homeback.jpg) ; */
+    /* background: linear-gradient(45deg, #30C5D2, #471069); */
+/* background: linear-gradient(215deg, rgb(5, 4, 33) 29%, rgba(9, 9, 121, 1) 47%, rgb(0, 169, 203) 100%); */
+}
+
+
+label{
+    color: aliceblue;
+}
+
+.locations-drop-down form label{
+    font-family: "Playfair Display", serif;
+}
+
+.locations-drop-down form select{
+    opacity: 0.5;
+    height: 3rem;
+}
+
+.locations-drop-down form input{
+    opacity: 0.5;
+    height: 3rem;
+}
+
+.locations-drop-down{
+    display: flex;
+    justify-content: center;}
+
+.locations-drop-down form{
+    position: relative;
+    justify-content: center;
+    max-width: 70vw;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* height: 1px; */
+
+    /* max-width: 70vw; */
+    
+}
+
+.locations-drop-down select,input{
+    border-radius: 0.5cap;
+}
+.Toppicks{
+    margin-top: 100px;
+}
+
+
+.message{
+    display: flex;
+    border: 2px solid whitesmoke;
+    border-radius: 0.5cap;
+    padding: 10px;  
+    /* z-index: 60; */
+    /* background-color: aquamarine; */
+    margin: 10px;
+}
+/* .message svg{padding: 10px;} */
+.message dl{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+dt{
+    font-weight: bold;
+}
+
+#tablehead{
+    color:aliceblue
+}
+
+
+.tableandtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.tableandtitle table{
+    padding: 30px;
+    width: 90vw; 
+    background: linear-gradient(45deg, rgb(47, 47, 47), rgb(50, 75, 134)70%);
+    border-radius: 0.5cap;
+    border: 2px solid whitesmoke;    
+}
+.tableandtitle table tr{
+    text-align: center;
+    position: relative;
+    color: aliceblue;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: lighter;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableandtitle table td{
+    transition: 0.3s ease;
+}
+.tableandtitle table td:hover{
+    font-weight: bold;
+}
+
+#savings{
+    display: flex;
+    color: aliceblue;
+    font-family: "Science Gothic", sans-serif;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 0.9rem;
+    background-color: blueviolet;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+

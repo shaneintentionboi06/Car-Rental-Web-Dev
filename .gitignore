@@ -1,0 +1,13 @@
+#Ignore Blender Files
+.blend
+.blend1
+.blend@
+
+#Ignore System Files
+.DS_Store
+.zip
+Thumbs.db
+
+#Ignore textures and addons
+model/
+addons/

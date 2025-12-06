@@ -1,0 +1,133 @@
+.login{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    align-self: flex-end;
+}
+
+
+.off-screen-menu{
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    left: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    /* font-size: 2rem; */
+    transition: .5s ease;
+    padding: 100px;
+    z-index: 100;
+}
+
+a{
+    text-decoration: none;
+    color:aliceblue
+}
+
+.off-screen-menu ul{
+    text-indent: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: baseline;}
+
+.off-screen-menu li{
+    color: aliceblue;
+    gap: 10px;
+    padding: clamp(1px,3vh, 40px);
+    padding-right: 30px;
+}
+
+.off-screen-menu.active{
+    left: 0;
+    font-size: larger;
+
+}
+
+.off-screen-menu.active{
+    padding: 10px;
+}
+
+nav {
+    position: fixed;
+    padding: 1rem ;
+    align-items: center;
+    display: flex;
+    /* background-color: rgb(37, 37, 37); */
+    border-radius: 0.5cap;
+    z-index: 1000;
+}
+
+.ham-menu{
+    height: 40px;
+    width: 40px;
+    margin-right: auto;
+    position: fixed;
+    top :20px; 
+    
+    /* background-color: aqua; */
+    /* padding:  11px; */
+}
+
+.ham-menu span{
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: aliceblue;
+    border-radius: 0.5cap;
+    transform: translate(-50%,50%);
+    transition: .5s ease;
+    z-index: 100;
+}
+
+.ham-menu span:nth-child(1){
+    top: 25%;
+} 
+
+.ham-menu span:nth-child(3){
+    top: 75%
+}
+
+.ham-menu.active span:nth-child(1){
+    top: 50%;
+    transform:translate(-50%,50%) rotate(-45deg);
+}
+
+.ham-menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%,50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.492);
+    top: 0;
+    left: 0;;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    backdrop-filter: blur(50px);
+    z-index: 90; 
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.overlay.active{
+    opacity: 0.4;
+    pointer-events: all;
+}
+

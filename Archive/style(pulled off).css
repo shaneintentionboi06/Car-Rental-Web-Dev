@@ -1,0 +1,70 @@
+header{
+    position: fixed;
+    margin: 10px;
+    z-index: 100;
+    width : 100%;
+    /* border-radius: ; */
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+}
+
+.Navigation{
+    display: flex;
+    background: black;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 1cap;
+    align-content: center;
+}
+
+.Navigation ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.header-container ul{
+    list-style: None;
+}
+.Navigation a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.profile{
+    background: black;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 1cap;
+    /* Can't find a way to not clip it to the scrollbar */
+    margin-right: 3cap
+}
+
+.profile ul{
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+
+
+
+main{
+    display: grid;
+    /* place-items: center; */
+}
+
+#startbutton{
+    background: black;
+    color: aliceblue;
+    border-radius: 0.5cap;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    font-size: larger;
+    font-family: "Keania One";
+    letter-spacing: 1px;
+    padding: 12px;}

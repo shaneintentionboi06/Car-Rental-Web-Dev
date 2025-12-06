@@ -1,0 +1,16 @@
+.Banner{
+    position: absolute;
+    left: -20%;
+    /* object-fit: cover; */
+    /* width: 100px; */
+    /* background-color: beige; */
+}
+
+.Banner img{
+    /* size: 100px; */
+}
+
+.place h2{
+    text-align: right;
+    margin: 40px;
+}

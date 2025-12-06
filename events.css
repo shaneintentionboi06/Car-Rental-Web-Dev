@@ -1,0 +1,52 @@
+.title{color: aliceblue;}
+
+
+.event{
+    display: flex;
+    justify-content: space-around ;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 0.5cap;
+    transition: 0.5s ease;
+    color: rgb(255, 255, 255);
+}
+.event dl{
+    display: flex   ;
+    mix-blend-mode:hard-light;
+    text-shadow: 1px 2px 10px black;
+}
+.event:hover{
+
+    height: 260px;
+}
+#Button button{
+    padding: 10px;
+    border-radius: 0.5cap;
+    height:200px;
+    box-shadow: 3px 2px 5px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.event dl dt{
+    font-family: "Science Gothic", sans-serif;
+    font-size: x-large;
+}
+
+#date{
+     font-family: "Pixelify Sans", sans-serif;
+     font-size: large;
+     font-weight: bold;
+}
+#location{
+     font-family: "Pixelify Sans", sans-serif;
+     font-size: large;
+     font-weight: bold;
+}
+
+#Des{
+    font-family: "Science Gothic", sans-serif;
+}
